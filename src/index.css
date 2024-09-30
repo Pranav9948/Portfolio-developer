@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.section-container {
+  @apply px-5 smallTablet:container smallTablet:px-0  smallTablet:mx-auto    
+  smallTablet:max-w-2xl largeTablet:max-w-3xl  smallDekstop:max-w-4xl 
+  laptop:max-w-6xl largeDekstop:max-w-7xl;
+}
+
+
+@keyframes waving-hand {
+  0% { transform: rotate(0deg); }
+  25% { transform: rotate(5deg); }
+  50% { transform: rotate(-5deg); }
+  75% { transform: rotate(5deg); }
+  100% { transform: rotate(0deg); }
+}
+
+.animate-waving-hand {
+  animation: waving-hand 0.5s ease-in-out;
+}
