@@ -28,14 +28,14 @@ const About = () => {
           />
         </h1>
 
-        <p className="mt-8 text-[#D9D9D9] text-center text-xs mobile:text-base font-medium leading-6 mb-6 smallTablet:text-start smallDekstop:text-lg smallDekstop:max-w-lg largeDekstop:text-xl">
+        <p className="mt-8 text-[#D9D9D9] text-start text-base mobile:text-base font-medium leading-6 mb-6 smallTablet:text-start smallDekstop:text-lg smallDekstop:max-w-lg largeDekstop:text-xl">
           A full stack MERN developer based in India, passionate about crafting
           dynamic, accessible web applications that deliver seamless and
           engaging user experiences.
         </p>
 
         <div className=" smallTablet:text-start">
-          <div className="flex items-center justify-center smallTablet:justify-start">
+          <div className=" smallTablet:justify-start">
             <div className=" inline text-pink-400 relative uppercase text-base font-bold font-mono tracking-widest before:absolute before:bg-pink-400 before:h-1 before:w-0 before:transition-all before:duration-500 before:ease-in-out before:left-0 before:top-7 hover:before:w-24">
               Contact me
             </div>
