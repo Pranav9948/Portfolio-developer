@@ -420,21 +420,52 @@ const allProjects = [
                   <p>{projects.ShortDescription}</p>
                 </p>
 
-                <div className="my-5 flex justify-between items-center gap-4 px-5">
+                <div className="my-5 flex justify-center items-center gap-6 px-5">
                   {" "}
+                  {
+                    projects.LiveLink && <h6 className=" text-sm font-semibold mobile:text-base text-blue-700 cursor-pointer">
+                      <a
+                        href={projects.LiveLink}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        Live link
+                      </a>
+                    </h6>
+                  }
+
+
+                    {
+                    projects.GitLink &&
                   <h6 className=" text-sm font-semibold mobile:text-base text-blue-700 cursor-pointer">
-                    Live link
+                    <a
+                      href={projects.GitLink}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Git link
+                    </a>
                   </h6>
+
+                    }
+
+                        {
+                    projects.Youtube && 
                   <h6 className=" text-sm font-semibold mobile:text-base text-blue-700 cursor-pointer">
-                    Git link
+                    <a
+                      href={projects.Youtube}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      {" "}
+                      Youtube Link
+                    </a>
                   </h6>
-                  <h6 className=" text-sm font-semibold mobile:text-base text-blue-700 cursor-pointer">
-                    Youtube Link
-                  </h6>
+}
                 </div>
 
                 <div className="card-actions flex items-center justify-center">
-                  <button className="btn bg-[#4EE1A0] capitalize hover:bg-white hover:text-[#4EE1A0] hover:border-[#4EE1A0]">
+                  <button className="btn bg-[#4EE1A0] capitalize border-none text-black hover:bg-white hover:text-[#4EE1A0] hover:border-[#4EE1A0]">
                     see details
                   </button>
                 </div>

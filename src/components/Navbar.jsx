@@ -1,34 +1,39 @@
 import React, { useEffect, useState } from "react";
 
-import { FaCartPlus, FaLinkedin, FaMoon, FaUserSecret } from "react-icons/fa";
+import {
+  FaCartPlus,
+  FaLinkedin,
+  FaLinkedinIn,
+  FaMoon,
+  FaUserSecret,
+} from "react-icons/fa";
 import { Link } from "react-router-dom";
 import NavLinks from "./NavLinks";
-import { FaSquareGithub } from "react-icons/fa6";
+import { FaGithubAlt } from "react-icons/fa";
 import { BiLogoGmail } from "react-icons/bi";
 
 const Navbar = () => {
+  const navLinks = [
+    {
+      id: 1,
+      link: "About",
+    },
 
-const navLinks = [
-  {
-    id: 1,
-    link: "About",
-  },
+    {
+      id: 2,
+      link: "Skills",
+    },
 
-  {
-    id: 2,
-    link: "Skills",
-  },
+    {
+      id: 3,
+      link: "Project",
+    },
 
-  {
-    id: 3,
-    link: "Project",
-  },
-
-  {
-    id: 4,
-    link: "Contact",
-  },
-];
+    {
+      id: 4,
+      link: "Contact",
+    },
+  ];
 
   return (
     <div className="navbar bg-black section-container">
@@ -51,9 +56,34 @@ const navLinks = [
         </ul>
       </div>
       <div className="navbar-end flex items-center gap-6 ">
-        <BiLogoGmail className="text-red-400 text-2xl" />
-        <FaLinkedin className="bg-cyan-600 text-2xl" />
-        <FaSquareGithub className="bg-yellow-500 text-2xl" />
+        <div>
+          <a
+            href="mailto:pranavprakash.codes@gmail.com?subject=Inquiry&body=Hi%20Pranav,%20I%20would%20like%20to%20discuss%20your%20project."
+            className="ml-2 link link-hover link-primary capitalize"
+          >
+            <BiLogoGmail className="text-red-400 text-2xl" />
+          </a>
+        </div>
+        <div>
+          <a
+            href="https://www.linkedin.com/in/pranav-p-12b503316"
+            target="_blank"
+            className="ml-2 link link-hover link-primary capitalize"
+            rel="noopener noreferrer"
+          >
+            <FaLinkedinIn className="text-blue-600 text-2xl" />{" "}
+          </a>
+        </div>
+        <div>
+          <a
+            href="https://github.com/Pranav9948/"
+            target="_blank"
+            className="ml-2 link link-hover link-primary capitalize"
+            rel="noopener noreferrer"
+          >
+            <FaGithubAlt className="text-orange-500 text-2xl" />{" "}
+          </a>
+        </div>
       </div>
     </div>
   );

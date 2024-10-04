@@ -41,7 +41,7 @@ const ContactForm = () => {
           </p>
         </div>
         <div className="smallDekstop:w-1/3">
-          <section class=" dark:bg-gray-900 w-full ">
+          <section class="  w-full ">
             <div class="py-8  w-full ">
               <form
                 ref={form}

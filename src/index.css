@@ -4,7 +4,7 @@
 
 
 .section-container {
-  @apply px-5 smallTablet:container smallTablet:px-0  smallTablet:mx-auto    
+  @apply px-5  smallTablet:px-0  container mx-auto  
   smallTablet:max-w-2xl largeTablet:max-w-3xl  smallDekstop:max-w-4xl 
   laptop:max-w-6xl largeDekstop:max-w-7xl;
 }
