@@ -19,9 +19,14 @@ export default {
           "0%": { opacity: 0, transform: "translateY(20px)" },
           "100%": { opacity: 1, transform: "translateY(0)" },
         },
+        progress: {
+          "0%": { width: "0%" },
+          "100%": { width: "3rem" },
+        },
       },
       animation: {
         "pop-in": "pop-in 0.7s ease-out forwards",
+        progress: "progress 2s ease-in-out infinite",
       },
 
       fontFamily: {

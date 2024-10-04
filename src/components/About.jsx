@@ -35,8 +35,8 @@ const About = () => {
         </p>
 
         <div className=" smallTablet:text-start">
-          <div className=" smallTablet:justify-start">
-            <div className=" inline text-pink-400 relative uppercase text-base font-bold font-mono tracking-widest before:absolute before:bg-pink-400 before:h-1 before:w-0 before:transition-all before:duration-500 before:ease-in-out before:left-0 before:top-7 hover:before:w-24">
+          <div className="smallTablet:justify-start">
+            <div className="inline text-pink-400 relative uppercase text-base font-bold font-mono tracking-widest before:absolute before:bg-pink-400 before:h-1 before:w-0 before:left-0 before:top-7 before:animate-progress">
               Contact me
             </div>
           </div>
