@@ -32,7 +32,7 @@ const ContactForm = () => {
       <div className="section-container flex   flex-col px-5 mobile:px-10 gap-5 smallDekstop:flex-row smallDekstop:justify-around smallDekstop:items-center smallDekstop:px-0  w-full  ">
         <div>
           <h2 className="text-center text-white text-2xl smallTablet:text-3xl smallDekstop:text-4xl font-bold mb-6 smallTablet:mb-12 font-serif uppercase hover:text-[#4EE1A0] hover:duration-400 hover:scale-110 hover:transition-all tracking-wider smallDekstop:text-start">
-            Contacts
+            Contact Me
           </h2>
 
           <p className="text-[#D9D9D9] mx-auto text-center font-sans font-medium text-sm smallTablet:text-base smallTablet:max-w-md smallDekstop:text-lg smallDekstop:text-start">

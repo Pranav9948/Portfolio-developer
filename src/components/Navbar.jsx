@@ -17,23 +17,37 @@ const Navbar = () => {
     {
       id: 1,
       link: "About",
+      target: "about",
     },
 
     {
       id: 2,
       link: "Skills",
+      target: "skills",
     },
 
     {
       id: 3,
       link: "Project",
+      target: "projects",
     },
 
     {
       id: 4,
       link: "Contact",
+      target: "contact",
     },
   ];
+
+
+  const scrollToSection = (id) => {
+    const section = document.getElementById(id);
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
+
 
   return (
     <div className="navbar bg-black section-container">
@@ -47,7 +61,10 @@ const Navbar = () => {
           {navLinks.map((links) => {
             return (
               <div key={links.id}>
-                <li className="text-white  text-base font-mono font-semibold smallDekstop:text-lg">
+                <li
+                  className="text-white cursor-pointer hover:text-[#4EE1A0] hover:duration-400 hover:scale-110 hover:transition-all  text-base font-mono font-semibold smallDekstop:text-lg"
+                  onClick={() => scrollToSection(links.target)}
+                >
                   {links.link}
                 </li>
               </div>

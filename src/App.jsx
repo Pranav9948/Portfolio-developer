@@ -8,39 +8,35 @@ import Projects from "./components/Projects";
 import ContactForm from "./components/ContactForm";
 import { Form, Link } from "react-router-dom";
 
-
 function App() {
   return (
     <div className="bg-black py-5">
       <div className="">
-      
-          {/* navbar section */}
+        {/* navbar section */}
 
-          
-             <Navbar />
+        <Navbar />
 
-             {/* about-section */}
+        {/* about-section */}
 
-             <About/>
+        <div id="about">
+          <About />
+        </div>
 
-       
+        {/* skills section */}
+        <div id="skills">
+          <Skills />
+        </div>
 
-          {/* skills section */}
+        {/* projects section */}
+        <div id="projects">
+          <Projects />
+        </div>
 
-          <Skills/>
-
-
-
-          {/* projects section */}
-
-          <Projects/>
-
-          {/* contact form */}
-
-          <ContactForm/>
-
-          <Navbar/>
-       
+        {/* contact form */}
+        <div id="contact">
+          <ContactForm />
+        </div>
+        <Navbar />
       </div>
     </div>
   );
