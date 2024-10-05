@@ -398,11 +398,11 @@ const allProjects = [
                       })}
                     </div>
 
-                    <div className="flex justify-center items-center">
+                    {/* <div className="flex justify-center items-center">
                       <button className="btn border-none text-black bg-[#4EE1A0] capitalize hover:bg-white hover:text-[#4EE1A0] hover:border-[#4EE1A0] my-5">
                         see details
                       </button>
-                    </div>
+                    </div> */}
                   </div>
                 </div>
               </div>
@@ -464,11 +464,11 @@ const allProjects = [
 }
                 </div>
 
-                <div className="card-actions flex items-center justify-center">
+                {/* <div className="card-actions flex items-center justify-center">
                   <button className="btn bg-[#4EE1A0] capitalize border-none text-black hover:bg-white hover:text-[#4EE1A0] hover:border-[#4EE1A0]">
                     see details
                   </button>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>
